@@ -10,6 +10,7 @@ namespace BattleShip
 
         //member variables 
         public int[,] array = new int[20, 20];
+        
 
 
 
@@ -25,9 +26,8 @@ namespace BattleShip
         //member methods 
         public void PrintBoard()
         {
-            Console.WriteLine("   1" + "  " + "  " + "2" + "  " + "  " + "3" + "  " + "  " + "4" + "  " + "  " + "5" + "  " + "  " + "6" + " " + " " + "7" + " " + " " + "8" + " " + " " + "9" + " " + " " + " 10" + " " + " " + "11" + " " + " " + "12" + " " + " " + "13" + " " + " " + "14" + " " + " " + "15" + " " + " " + "16" + " " + " " + "17" + " " + " " + "18" + " " + " " + "19" + " " + " " + "20");
-
-            for (int i = 1; i <= 20; i++)
+            Console.WriteLine("   1" + "   " + " 2 " + "   " + " 3 " + "   " + " 4 " + "   " + " 5 " + "   " + " 6 " + "  " + " 7 " + " " + " 8 " + "  " + " 9 " + "  " + "  10 ");
+            for (int i = 1; i <= 10; i++)
             {
                 
                 LetterToWrite(i);
@@ -69,38 +69,8 @@ namespace BattleShip
                 case 10:
                     Console.WriteLine("J");
                     break;
-                case 11:
-                    Console.WriteLine("K");
-                    break;
-                case 12:
-                    Console.WriteLine("L");
-                    break;
-                case 13:
-                    Console.WriteLine("M");
-                    break;
-                case 14:
-                    Console.WriteLine("N");
-                    break;
-                case 15:
-                    Console.WriteLine("O");
-                    break;
-                case 16:
-                    Console.WriteLine("P");
-                    break;
-                case 17:
-                    Console.WriteLine("Q");
-                    break;
-                case 18:
-                    Console.WriteLine("R");
-                    break;
-                case 19:
-                    Console.WriteLine("S");
-                    break;
-                case 20:
-                    Console.WriteLine("T");
-                    break;
                 default:
-                    Console.WriteLine("0");
+                    Console.WriteLine("");
                     break;
             }
 
