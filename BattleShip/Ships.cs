@@ -7,7 +7,7 @@ namespace BattleShip
     public class Ships
     {
         //member variables
-        List<Ships> ships
+        List<Ships> ships;
         public string name;
         public int length;
         public bool shipIsSunk = false; //sunk or not
@@ -45,6 +45,8 @@ namespace BattleShip
         {
             foreach (Ships item in ships)
             {
+                if (shipIsSunk == true)
+                ships.Remove(item);
 
 
             }
