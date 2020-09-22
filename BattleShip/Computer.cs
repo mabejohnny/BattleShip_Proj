@@ -1,26 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace BattleShip
 {
-    abstract class Player
+    class Computer : Player
     {
-
         //member variables
-        public string name;
-        public int score;
+
+
 
 
 
 
         //constructor
-        public Player()
+        public Computer()
         {
-
+            name = "Fleet Admiral ComPutEr";
         }
 
-
         //member methods
+
+
+
     }
 }

@@ -4,9 +4,8 @@ using System.Text;
 
 namespace BattleShip
 {
-    class Fleet : Ships 
+    class Ships
     {
-
         //member variables
         public string name;
         public string color;
@@ -14,16 +13,14 @@ namespace BattleShip
 
 
         //constructor
-        public Fleet()
+        public Ships()
         {
             name = name;
             color = color;
             length = length;
 
-
         }
 
-
-        //member methods
+        //member methods 
     }
 }
