@@ -133,7 +133,7 @@ namespace BattleShip
         public void ReadTheRulesSingle()
         {
             Console.WriteLine("                       BATTLESHIP V 1.0");
-            Console.WriteLine("Allow me to introduce myself " + playerOne.name + ".  My name is " + playerTwo.name + "\n" + "\n");
+            Console.WriteLine("Allow me to introduce myself " + playerOne.name + ".  My name is  " + playerTwo.name + "\n" + "\n");
             Console.WriteLine("The object of Battleship is to try and sink all of the other player's before they sink all of your ships." + "\n" + "All of the other player's ships are somewhere on his/her board." + "\n" + "You try and hit them by calling out the coordinates of one of the squares on the board." +"\n" + "The other player also tries to hit your ships by calling out coordinates." + "\n" + "Neither you nor the other player should be looking at the other's board so you must try to guess where they are." + "\n" + "Each board in the physical game has two grids:  the lower (horizontal) section for the player's ships and the upper part (vertical during play) for recording the player's guesses." + "\n" + "\n" + "\n");
             Console.WriteLine("Hit 'enter' when your finished");
             Console.ReadLine();

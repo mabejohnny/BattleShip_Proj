@@ -17,7 +17,7 @@ namespace BattleShip
         //constructor
         public Computer()
         {
-            name = "Fleet Admiral ComPutEr";
+            name = " Admiral David G. Farragut";
         }
 
         //member methods
