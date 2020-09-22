@@ -4,20 +4,19 @@ using System.Text;
 
 namespace BattleShip
 {
-    class Ships
+    public class Ships
     {
         //member variables
         public string name;
-        public string color;
-        public string length;
+        public int length;
+        
 
 
         //constructor
-        public Ships()
+        public Ships(string name, int length)
         {
-            name = name;
-            color = color;
-            length = length;
+            this.name = name;
+            this.length = length;
 
         }
 

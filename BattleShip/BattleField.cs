@@ -8,7 +8,7 @@ namespace BattleShip
     {
 
         //member variables
-
+        int[,] array = new int[20, 20];
 
 
         //constructor
