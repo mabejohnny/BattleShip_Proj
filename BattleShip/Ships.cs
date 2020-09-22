@@ -48,7 +48,6 @@ namespace BattleShip
                 if (shipIsSunk == true)
                 ships.Remove(item);
 
-
             }
         }
     }

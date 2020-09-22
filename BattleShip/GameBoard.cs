@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Consul;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -24,59 +25,83 @@ namespace BattleShip
         //member methods 
         public void PrintBoard()
         {
-            Console.WriteLine("  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  ");
+            Console.WriteLine("   1" + "  " + "  " + "2" + "  " + "  " + "3" + "  " + "  " + "4" + "  " + "  " + "5" + "  " + "  " + "6" + " " + " " + "7" + " " + " " + "8" + " " + " " + "9" + " " + " " + " 10" + " " + " " + "11" + " " + " " + "12" + " " + " " + "13" + " " + " " + "14" + " " + " " + "15" + " " + " " + "16" + " " + " " + "17" + " " + " " + "18" + " " + " " + "19" + " " + " " + "20");
+
             for (int i = 1; i <= 20; i++)
             {
-                Console.Write($"{LetterToWrite(i)}");
-                for (int y = 1; y <= 20; y++)
-                {
-
-                    Coordinate coordinate = new Coordinate(i, y);
-                    ShotHistory ValShotHist = GameBoard.CheckCoordinate(coordinate);
-                    switch (ValShotHist)
-                    {
-                        case ShotHistory.Unknown:
-                            Console.Write(" ! ");
-                            break;
-                        case ShotHistory.Miss:
-                            Console.Write(" M ");
-                            break;
-                        case ShotHistory.Hit:
-                            Console.Write(" H ");
-                            break;
-                        default:
-                            Console.Write(" ! ");
-                            break;
-                    }
-                }
+                
+                LetterToWrite(i);
                 Console.WriteLine("");
+
             }
         }
-        public static char LetterToWrite(int i)
+        public void LetterToWrite(int i)
         {
             switch (i)
             {
                 case 1:
-                    return 'A';
+                    Console.WriteLine("A");
+                    break;
                 case 2:
-                    return 'B';
+                    Console.WriteLine("B");
+                    break;
                 case 3:
-                    return 'C';
+                    Console.WriteLine("C");
+                    break;
                 case 4:
-                    return 'D';
+                    Console.WriteLine("D");
+                    break;
                 case 5:
-                    return 'E';
+                    Console.WriteLine("E");
+                    break;
                 case 6:
-                    return 'F';
+                    Console.WriteLine("F");
+                    break;
                 case 7:
-                    return 'G';
+                    Console.WriteLine("G");
+                    break;
                 case 8:
-                    return 'H';
+                    Console.WriteLine("H");
+                    break;
                 case 9:
-                    return 'I';
+                    Console.WriteLine("I");
+                    break;
+                case 10:
+                    Console.WriteLine("J");
+                    break;
+                case 11:
+                    Console.WriteLine("K");
+                    break;
+                case 12:
+                    Console.WriteLine("L");
+                    break;
+                case 13:
+                    Console.WriteLine("M");
+                    break;
+                case 14:
+                    Console.WriteLine("N");
+                    break;
+                case 15:
+                    Console.WriteLine("O");
+                    break;
+                case 16:
+                    Console.WriteLine("P");
+                    break;
+                case 17:
+                    Console.WriteLine("Q");
+                    break;
+                case 18:
+                    Console.WriteLine("R");
+                    break;
+                case 19:
+                    Console.WriteLine("S");
+                    break;
+                case 20:
+                    Console.WriteLine("T");
+                    break;
                 default:
-                    return 'J';
-
+                    Console.WriteLine("0");
+                    break;
             }
 
 
